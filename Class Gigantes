@@ -1,0 +1,50 @@
+/*
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
+
+package bibliotecadalaran;
+
+/**
+ *
+ * @author Francesco
+ */
+public class Gigantes {
+    private String nomG;
+    private String tipo;
+    private Double alt;
+
+    public Gigantes() {
+    }
+
+    public void setNomG(String nomG) {
+        this.nomG = nomG;
+    }
+
+    public void setTipo(String tipo) {
+        this.tipo = tipo;
+    }
+
+    public void setAlt(Double alt) {
+        this.alt = alt;
+    }
+
+    public String getNomG() {
+        return nomG;
+    }
+
+    public String getTipo() {
+        return tipo;
+    }
+
+    public Double getAlt() {
+        return alt;
+    }
+
+    
+    @Override
+    public String toString() {
+        return "Gigantes{" + "nomG=" + nomG + ", tipo=" + tipo + ", alt=" + alt + '}';
+    }
+}
