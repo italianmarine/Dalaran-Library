@@ -10,7 +10,7 @@ package clasedispensadorprogra2;
  *
  * @author Francesco
  */
-public class Golosinas {
+public class Dragons {
     private String nom;
     private Double pre;
     private int gram;
