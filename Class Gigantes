@@ -15,6 +15,11 @@ public class Gigantes {
     private String tipo;
     private Double alt;
 
+public Gigantes(String nomG, String tipo, Double alt) {
+        this.nomG = nomG;
+        this.tipo = tipo;
+        this.alt = alt;
+    }
     public Gigantes() {
     }
 
