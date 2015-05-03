@@ -1,0 +1,67 @@
+/*
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
+
+package clasedispensadorprogra2;
+
+/**
+ *
+ * @author Francesco
+ */
+public class Golosinas {
+    private String nom;
+    private Double pre;
+    private int gram;
+    private String adv;
+
+    public Golosinas() {
+    }
+
+    public Golosinas(String nom, Double pre, int gram, String ing) {
+        this.nom = nom;
+        this.pre = pre;
+        this.gram = gram;
+        this.adv = ing;
+    }
+
+    public String getNom() {
+        return nom;
+    }
+
+    public Double getPre() {
+        return pre;
+    }
+
+    public int getGram() {
+        return gram;
+    }
+
+    public String getAdv() {
+        return adv;
+    }
+
+    public void setNom(String nom) {
+        this.nom = nom;
+    }
+
+    public void setPre(Double pre) {
+        this.pre = pre;
+    }
+
+    public void setGram(int gram) {
+        this.gram = gram;
+    }
+
+    public void setAdv(String ing) {
+        this.adv = ing;
+    }
+
+    @Override
+    public String toString() {
+        return "Golosinas{" + "nom=" + nom + ", pre=" + pre + ", gram=" + gram + ", adv=" + adv + '}';
+    }
+
+    
+}
