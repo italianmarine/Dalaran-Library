@@ -1,0 +1,66 @@
+/*
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
+package clasedispensadorprogra2;
+
+/**
+ *
+ * @author Francesco
+ */
+public class Churro {
+
+    private String nom;
+    private Double pre;
+    private int gram;
+    private String ing;
+
+    public Churro() {
+    }
+
+    public Churro(String nom, Double pre, int gram, String ing) {
+        this.nom = nom;
+        this.pre = pre;
+        this.gram = gram;
+        this.ing = ing;
+    }
+
+    public String getNom() {
+        return nom;
+    }
+
+    public Double getPre() {
+        return pre;
+    }
+
+    public int getGram() {
+        return gram;
+    }
+
+    public String getIng() {
+        return ing;
+    }
+
+    public void setNom(String nom) {
+        this.nom = nom;
+    }
+
+    public void setPre(Double pre) {
+        this.pre = pre;
+    }
+
+    public void setGram(int gram) {
+        this.gram = gram;
+    }
+
+    public void setIng(String ing) {
+        this.ing = ing;
+    }
+
+    @Override
+    public String toString() {
+        return "Churro{" + "nom=" + nom + ", pre=" + pre + ", gram=" + gram + ", ing=" + ing + '}';
+    }
+
+}
