@@ -1,1 +1,55 @@
+/*
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
+package bibliotecadalaran;
 
+/**
+ *
+ * @author Francesco
+ */
+public class Ciudades {
+
+    private String nomCiu;
+    private String lug;
+    private int NumHab;
+
+    public Ciudades() {
+    }
+
+    public void setNomCiu(String nomCiu) {
+        this.nomCiu = nomCiu;
+    }
+
+    public void setLug(String lug) {
+        this.lug = lug;
+    }
+
+    public void setNumHab(int NumHab) {
+        this.NumHab = NumHab;
+    }
+
+    public String getNomCiu() {
+        return nomCiu;
+    }
+
+    public String getLug() {
+        return lug;
+    }
+
+    public int getNumHab() {
+        return NumHab;
+    }
+
+    public Ciudades(String nomCiu, String lug, int NumHab) {
+        this.nomCiu = nomCiu;
+        this.lug = lug;
+        this.NumHab = NumHab;
+    }
+
+    @Override
+    public String toString() {
+        return "Ciudades{" + "nomCiu=" + nomCiu + ", lug=" + lug + ", NumHab=" + NumHab + '}';
+    }
+}
