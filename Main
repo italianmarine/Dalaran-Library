@@ -54,11 +54,13 @@ public class ClaseDispensadorProgra2 {
         //menu
         while (opc) {
             System.out.println("\"Que opcion desea usted ver:\n "
-                    + "1)Agregar Churro o Golosina\n "
-                    + "2)Modificar Churro o Golosina\n "
-                    + "3)Comprar Churro o Golosina\n"
-                    + "4)Reportes del Dispensador:\n"
-                    + "5)Salir");
+                    + "1)Agregar un Titan:\n "
+                    + "2)Agregar una Creacion:\n "
+                    + "3)Modificar una Creacion:\n"
+                    + "4)Eliminar una Creacion:\n"
+                    + "5)Mostrar Reportes Titanes:"
+                    + "6)Mostrar Reportes Creaciones:"
+                    + "7)Mostrar Reportes Creaciones en Planetas:");
             menu = sc.nextInt();
 
             if (menu == 1) {
