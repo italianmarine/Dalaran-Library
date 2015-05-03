@@ -1,0 +1,61 @@
+/*
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
+
+package bibliotecadalaran;
+
+/**
+ *
+ * @author Francesco
+ */
+public class GuardDeCreacion {
+    private String nomGC;
+    private int edadGC;
+    private String espe;
+    private String lugresGC;
+
+    public void setNomGC(String nomGC) {
+        this.nomGC = nomGC;
+    }
+
+    public void setEdadGC(int edadGC) {
+        this.edadGC = edadGC;
+    }
+
+    public void setEspe(String espe) {
+        this.espe = espe;
+    }
+
+    public void setLugresGC(String lugresGC) {
+        this.lugresGC = lugresGC;
+    }
+
+    public String getNomGC() {
+        return nomGC;
+    }
+
+    public int getEdadGC() {
+        return edadGC;
+    }
+
+    public String getEspe() {
+        return espe;
+    }
+
+    public String getLugresGC() {
+        return lugresGC;
+    }
+
+    public GuardDeCreacion(String nomGC, int edadGC, String espe, String lugresGC) {
+        this.nomGC = nomGC;
+        this.edadGC = edadGC;
+        this.espe = espe;
+        this.lugresGC = lugresGC;
+    }
+
+    public GuardDeCreacion() {
+    }
+    
+}
