@@ -3,64 +3,57 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package clasedispensadorprogra2;
+package bibliotecadalaran;
+
+import java.util.logging.Logger;
 
 /**
  *
  * @author Francesco
  */
-public class Churro {
+public class Titanes {
 
     private String nom;
-    private Double pre;
-    private int gram;
-    private String ing;
+    private String clase;
+    private String guard;
 
-    public Churro() {
+    public Titanes() {
     }
 
-    public Churro(String nom, Double pre, int gram, String ing) {
+    public Titanes(String nom, String clase, String guard) {
         this.nom = nom;
-        this.pre = pre;
-        this.gram = gram;
-        this.ing = ing;
-    }
-
-    public String getNom() {
-        return nom;
-    }
-
-    public Double getPre() {
-        return pre;
-    }
-
-    public int getGram() {
-        return gram;
-    }
-
-    public String getIng() {
-        return ing;
+        this.clase = clase;
+        this.guard = guard;
     }
 
     public void setNom(String nom) {
         this.nom = nom;
     }
 
-    public void setPre(Double pre) {
-        this.pre = pre;
+    public void setClase(String clase) {
+        this.clase = clase;
     }
 
-    public void setGram(int gram) {
-        this.gram = gram;
+    public void setGuard(String guard) {
+        this.guard = guard;
     }
 
-    public void setIng(String ing) {
-        this.ing = ing;
+    public String getNom() {
+        return nom;
     }
 
-    @Override
+    public String getClase() {
+        return clase;
+    }
+
+    public String getGuard() {
+        return guard;
+    }
+    
+
+    
+@Override
     public String toString() {
-        return "Churro{" + "nom=" + nom + ", pre=" + pre + ", gram=" + gram + ", ing=" + ing + '}';
+        return "Titanes{" + "nom=" + nom + ", clase=" + clase + ", guard=" + guard + '}';
     }
-
 }
