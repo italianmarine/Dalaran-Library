@@ -11,15 +11,14 @@ package clasedispensadorprogra2;
  * @author Francesco
  */
 public class Dragons {
-    private String nom;
-    private Double pre;
-    private int gram;
-    private String adv;
+    private String color;
+    private String nombre;
+    private int edad;
 
-    public Golosinas() {
+    public Dragons() {
     }
 
-    public Golosinas(String nom, Double pre, int gram, String ing) {
+    public Dragons(String color, String nombre, int edad) {
         this.nom = nom;
         this.pre = pre;
         this.gram = gram;
@@ -63,5 +62,5 @@ public class Dragons {
         return "Golosinas{" + "nom=" + nom + ", pre=" + pre + ", gram=" + gram + ", adv=" + adv + '}';
     }
 
-    
+
 }
