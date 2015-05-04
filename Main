@@ -89,7 +89,6 @@ public class BibliotecaDalaran {
                     Dragones miDragon = new Dragones(col, nomdrag, edaddrag);
                     miDragon.toString();
                     Dragones.add(miDragon);
-                    System.out.println(Dragones.get(0).toString());
                 } else if (cre == 2) {
                     System.out.println("Ingrese el nombre de su Earthen: ");
                     String nomEarth = sc.next();
@@ -154,6 +153,21 @@ public class BibliotecaDalaran {
                     Guardianes.add(miGuardian);
                 }
             } else if (menu == 3) {
+                    System.out.println("Cual creacion le gustaria modificar?\n");
+                    System.out.println("1) Dragones\n");
+                    System.out.println("2) Earthen\n");
+                    System.out.println("3) Gigantes\n");
+                    System.out.print("4) GuardianesDeCreacion\n");
+                    int numModificacion = sc.nextInt();
+                    if (numModificacion == 1) {
+                        System.out.println("Que le gustaria Modificar?");
+                    } else if (nuModificacion == 2) {
+                        System.out.println("Que le gustaria Modificar?");
+                    } else if (numModificacion == 3) {
+                        System.out.println("Que le gustaria Modificar?");
+                    } else if (numModificacion == 4) {
+                        System.out.println("Que le gustaria Modificar?");
+                    }
 
             } else if (menu == 4) {
 
