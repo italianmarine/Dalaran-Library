@@ -14,6 +14,26 @@ public class Ciudades {
     private String nomCiu;
     private String lug;
     private int NumHab;
+    private String raza;
+    private String sub;
+
+    public void setSub(String sub) {
+        this.sub = sub;
+    }
+
+    public String getSub() {
+        return sub;
+    }
+
+    
+
+    public void setRaza(String raza) {
+        this.raza = raza;
+    }
+
+    public String getRaza() {
+        return raza;
+    }
 
     public Ciudades() {
     }
@@ -42,14 +62,18 @@ public class Ciudades {
         return NumHab;
     }
 
-    public Ciudades(String nomCiu, String lug, int NumHab) {
+    public Ciudades(String nomCiu, String lug, int NumHab, String raza, String sub) {
         this.nomCiu = nomCiu;
         this.lug = lug;
         this.NumHab = NumHab;
+        this.raza = raza;
+        this.sub = sub;
     }
 
     @Override
     public String toString() {
-        return "Ciudades{" + "nomCiu=" + nomCiu + ", lug=" + lug + ", NumHab=" + NumHab + '}';
+        return "Ciudades{" + "nomCiu = " + nomCiu + ", lug = " + lug + ", NumHab = " + NumHab + ", raza = " + raza +"subteranea = "+sub;
     }
+    
+    
 }
