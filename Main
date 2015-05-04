@@ -12,34 +12,6 @@ import java.util.Scanner;
  *
  * @author Francesco
  */
-public class BibliotecaDalaran /*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
-package bibliotecadalaran;
-
-import java.util.ArrayList;
-import java.util.Scanner;
-
-/**
- *
- * @author Francesco
- */
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
-package bibliotecadalaran;
-
-import java.util.ArrayList;
-import java.util.Scanner;
-
-/**
- *
- * @author Francesco
- */
 public class BibliotecaDalaran {
 
     /**
@@ -67,15 +39,15 @@ public class BibliotecaDalaran {
                     + "6)Mostrar Reportes Creaciones:\n"
                     + "7)Mostrar Reportes Creaciones en Planetas:\n");
             menu = sc.nextInt();
-            if (menu==1){
-                noGod=true;
+            if (menu == 1) {
+                noGod = true;
             }
 
             while (!noGod) {
                 System.out.println("Porfavor agregue un Titan primero:\n"
                         + "1)Agregar un Titan:\n ");
                 menu = sc.nextInt();
-                noGod=true;
+                noGod = true;
             }
             if (menu == 1) {
                 System.out.println("Escoga un nombre para el Titan: ");
@@ -91,7 +63,7 @@ public class BibliotecaDalaran {
 
             } else if (menu == 2) {
                 System.out.println("Escoja una Creacion: \n");
-                
+
                 System.out.println("1)Dragones\n"
                         + "2) Earthen\n"
                         + "3) Gigantes\n"
@@ -114,19 +86,78 @@ public class BibliotecaDalaran {
                     int edaddrag = sc.nextInt();
 
                     Dragones miDragon = new Dragones(col, nomdrag, edaddrag);
-                    System.out.println("hi");
                     miDragon.toString();
                     Dragones.add(miDragon);
-                    //Dragones.get(0).getNombre();
-                    Dragones.get(0).toString();
+                    System.out.println(Dragones.get(0).toString());
+                } else if (cre == 2) {
+                    System.out.println("Ingrese el nombre de su Earthen: ");
+                    String nomEarth = sc.next();
+                    System.out.println("De que tipo estan hechos:\n "
+                            + "-piedra\n"
+                            + "-tierra");
+                    String tipEarth = sc.next();
+                    System.out.println("Donde viven: ");
+                    String loc = sc.next();
 
-                } else if (menu == 3) {
-
-                } else if (menu == 4) {
-
-                } else if (menu == 5) {
-                    opc = false;
+                    Earthen miHumano = new Earthen(nomEarth, tipEarth, loc);
+                    miHumano.toString();
+                    Earthen.add(miHumano);
+                } else if (cre == 3) {
+                    System.out.println("Porfavor escriba el nombre del Gigante: ");
+                    String nomGig = sc.next();
+                    System.out.println("De que tipo es su gigante: \n"
+                            + "-Montana\n"
+                            + "-Mar\n"
+                            + "-Tormenta\n");
+                    String tipGig = sc.next();
+                    System.out.println("Que tan alto es su Gigante: ");
+                    double altGig = sc.nextDouble();
+                    Gigantes miGigante = new Gigantes(nomGig, tipGig, altGig);
+                    miGigante.toString();
+                    Gigantes.add(miGigante);
+                } else if (cre == 4) {
+                    String razCiu = "";
+                    System.out.println("Porfavor ingrese el nombre de su ciudad: ");
+                    String nomCiu = sc.next();
+                    System.out.println("Donde se encuentra su ciudad: ");
+                    String locCiu = sc.next();
+                    System.out.println("Cuantos habitantes hay en esta ciudad: ");
+                    int habCiu = sc.nextInt();
+                    if (habCiu > 0) {
+                        System.out.println("Que raza habita su planeta: ");
+                        razCiu = sc.next();
+                    } else {
+                        razCiu = sc.next("no hay razas presentes");
+                    }
+                    System.out.println("Su raza es subteranea o no\n "
+                            + "escribir si o no:\n ");
+                    String subCiu = sc.next();
+                    Ciudades miCiudad = new Ciudades(nomCiu, locCiu, habCiu, razCiu, subCiu);
+                    miCiudad.toString();
+                    Ciudades.add(miCiudad);
+                } else if (cre == 5) {
+                    System.out.println("Porfavor escriba el nombre de su Guardian: ");
+                    String nomGuar = sc.next();
+                    System.out.println("Porfavor ingrese la edad de su Guardian: ");
+                    int edadGuar = sc.nextInt();
+                    System.out.println("Porfavor escribir la especialidad de su Guardian: "
+                            + "-Trueno\n"
+                            + "-Flora\n"
+                            + "-Mecanicos\n"
+                            + "-Enganos\n");
+                    String espeGuar = sc.next();
+                    System.out.println("Donde vive su Guardian:\n ");
+                    String vivGuar = sc.next();
+                    GuardDeCreacion miGuardian = new GuardDeCreacion(nomGuar, edadGuar, espeGuar, vivGuar);
+                    miGuardian.toString();
+                    Guardianes.add(miGuardian);
                 }
+            } else if (menu == 3) {
+
+            } else if (menu == 4) {
+
+            } else if (menu == 5) {
+                opc = false;
             }
         }
     }
