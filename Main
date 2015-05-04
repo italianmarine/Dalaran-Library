@@ -3,7 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package clasedispensadorprogra2;
+package bibliotecadalaran;
 
 import java.util.ArrayList;
 import java.util.Scanner;
@@ -12,46 +12,19 @@ import java.util.Scanner;
  *
  * @author Francesco
  */
-public class ClaseDispensadorProgra2 {
+public class BibliotecaDalaran {
 
     /**
      * @param args the command line arguments
      */
     public static void main(String[] args) {
+        // TODO code application logic here
         boolean opc = true;
         int menu = 0;
         Scanner sc = new Scanner(System.in);
-        ArrayList inventario = new ArrayList();
+        ArrayList Titanes = new ArrayList();
         ArrayList factura = new ArrayList();
-//agregar Churro o Golosina
-        inventario.add(new Churro("zibba", 6.0, 60, "papas,aire,..."));
-        inventario.add(new Golosinas("empanada", 30.0, 40, "produce la muerte"));
 
-        ((Golosinas) inventario.get(1)).setAdv("Carne contaminada");
-
-//ver inventario
-        for (Object temp : inventario) {
-            if (temp instanceof Churro) {
-                System.out.println(inventario.indexOf(temp));
-            }
-        }
-
-        //venta
-        factura.add(inventario.get(0));
-        inventario.remove(0);
-
-        double total = 0.0;
-        for (Object temp : factura) {
-            if (temp instanceof Churro) {
-                total += ((Churro) temp).getPre();
-            }
-            if (temp instanceof Golosinas) {
-                total += ((Golosinas) temp).getPre();
-            }
-        }
-        System.out.println(total);
-
-        //menu
         while (opc) {
             System.out.println("\"Que opcion desea usted ver:\n "
                     + "1)Agregar un Titan:\n "
@@ -77,3 +50,4 @@ public class ClaseDispensadorProgra2 {
         }
     }
 }
+
