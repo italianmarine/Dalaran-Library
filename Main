@@ -42,7 +42,7 @@ public class BibliotecaDalaran {
         ArrayList Gigantes = new ArrayList();
         ArrayList Guardianes = new ArrayList();
         ArrayList Ciudades = new ArrayList();
-        
+
         while (opc) {
             System.out.println("\"Que opcion desea usted ver:\n "
                     + "1)Agregar un Titan:\n "
@@ -53,16 +53,24 @@ public class BibliotecaDalaran {
                     + "6)Mostrar Reportes Creaciones:"
                     + "7)Mostrar Reportes Creaciones en Planetas:");
             menu = sc.nextInt();
-            
+
             while(!noGod)
             {
                 System.out.println("Porfavor agregue un Titan primero:\n"
                         + "1)Agregar un Titan:\n ");
                 menu = sc.nextInt();
-            } 
+            }
             if (menu == 1) {
-                System.out.println("Porfavor dele un nombre al Titan: ");
+                System.out.println("Escoga un nombre para el Titan: ");
                 String tit = sc.next();
+                System.out.println("Escoga una clase para el Titan (Luchador, "
+                                   + "Curador, Shaman o Mago");
+                String clase = sc.next();
+                System.out.println("Escoga el tipo de guardian para su Titan "
+                                   + "(Tiempo, Vida, Tierra o Magia)");
+                String guardian = sc.next();
+                Titan miTitan = new Titan(tit, clase, guardian);
+                Titanes.add(miTitan);
 
             } else if (menu == 2) {
 
@@ -76,5 +84,3 @@ public class BibliotecaDalaran {
         }
     }
 }
-
-
