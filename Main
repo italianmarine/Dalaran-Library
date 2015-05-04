@@ -69,9 +69,8 @@ public class BibliotecaDalaran {
                 System.out.println("Escoga el tipo de guardian para su Titan "
                                    + "(Tiempo, Vida, Tierra o Magia)");
                 String guardian = sc.next();
-                Titan miTitan = new Titan(tit, clase, guardian);
+                Titanes miTitan = new Titanes(tit, clase, guardian);
                 Titanes.add(miTitan);
-
             } else if (menu == 2) {
 
             } else if (menu == 3) {
