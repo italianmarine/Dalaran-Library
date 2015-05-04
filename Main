@@ -28,6 +28,7 @@ public class BibliotecaDalaran {
         ArrayList Gigantes = new ArrayList();
         ArrayList Guardianes = new ArrayList();
         ArrayList Ciudades = new ArrayList();
+        ArrayList Planetas = new ArrayList();
 
         while (opc) {
             System.out.println("\"Que opcion desea usted ver:\n "
