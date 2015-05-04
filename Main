@@ -12,6 +12,20 @@ import java.util.Scanner;
  *
  * @author Francesco
  */
+public class BibliotecaDalaran /*
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
+package bibliotecadalaran;
+
+import java.util.ArrayList;
+import java.util.Scanner;
+
+/**
+ *
+ * @author Francesco
+ */
 public class BibliotecaDalaran {
 
     /**
@@ -19,12 +33,16 @@ public class BibliotecaDalaran {
      */
     public static void main(String[] args) {
         // TODO code application logic here
-        boolean opc = true;
+        boolean opc = true, noGod = false;
         int menu = 0;
         Scanner sc = new Scanner(System.in);
         ArrayList Titanes = new ArrayList();
-        ArrayList factura = new ArrayList();
-
+        ArrayList Dragones = new ArrayList();
+        ArrayList Earthen = new ArrayList();
+        ArrayList Gigantes = new ArrayList();
+        ArrayList Guardianes = new ArrayList();
+        ArrayList Ciudades = new ArrayList();
+        
         while (opc) {
             System.out.println("\"Que opcion desea usted ver:\n "
                     + "1)Agregar un Titan:\n "
@@ -35,8 +53,16 @@ public class BibliotecaDalaran {
                     + "6)Mostrar Reportes Creaciones:"
                     + "7)Mostrar Reportes Creaciones en Planetas:");
             menu = sc.nextInt();
-
+            
+            while(!noGod)
+            {
+                System.out.println("Porfavor agregue un Titan primero:\n"
+                        + "1)Agregar un Titan:\n ");
+                menu = sc.nextInt();
+            } 
             if (menu == 1) {
+                System.out.println("Porfavor dele un nombre al Titan: ");
+                String tit = sc.next();
 
             } else if (menu == 2) {
 
@@ -50,4 +76,5 @@ public class BibliotecaDalaran {
         }
     }
 }
+
 
