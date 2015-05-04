@@ -59,6 +59,9 @@ public class BibliotecaDalaran {
                 System.out.println("Porfavor agregue un Titan primero:\n"
                         + "1)Agregar un Titan:\n ");
                 menu = sc.nextInt();
+                if (!menu.isEmpty()) {
+                    noGod = true;
+                }
             }
             if (menu == 1) {
                 System.out.println("Escoga un nombre para el Titan: ");
