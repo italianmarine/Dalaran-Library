@@ -89,7 +89,6 @@ public class BibliotecaDalaran {
                     Dragones miDragon = new Dragones(col, nomdrag, edaddrag);
                     miDragon.toString();
                     Dragones.add(miDragon);
-                    System.out.println(Dragones.get(0).toString());
                 } else if (cre == 2) {
                     System.out.println("Ingrese el nombre de su Earthen: ");
                     String nomEarth = sc.next();
